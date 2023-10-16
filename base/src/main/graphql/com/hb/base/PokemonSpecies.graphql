@@ -1,0 +1,40 @@
+# query the pokemon list
+query PokemonSpecies($name: String, $offset: Int, $count: Int) {
+    pokemon_v2_pokemonspecies(offset: $offset, limit: $count, where: {name: {_like: $name}}) {
+        capture_rate
+        id
+        name
+        pokemon_color_id
+        pokemon_v2_pokemons {
+            id
+            name
+        }
+        pokemon_v2_pokemoncolor {
+            name
+        }
+    }
+}
+
+# query the abilities by pokemon name
+query Pokemonabilities($name: String) {
+    pokemon_v2_pokemonspecies(where: {name: {_eq: $name}}) {
+        id
+        name
+        pokemon_v2_pokemons {
+            id
+            name
+            pokemon_v2_pokemonabilities {
+                id
+                pokemon_v2_ability {
+                    name
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+

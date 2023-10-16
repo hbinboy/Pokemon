@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Pokemon</string>
+
+    <string name="home_title">Home</string>
+
+    <string name="search_hint">Enter your search query</string>
+    <string name="search_title">Search</string>
+    <string name="search_search_word_empty_tip">Please input search word!</string>
+    <string name="search_item_name">Name: </string>
+    <string name="search_item_capture_rate">Capture Rate: </string>
+    <string name="search_item_species">Species: </string>
+
+    <string name="detail_title">Detail</string>
+    <string name="detail_name_tip">Name: </string>
+    <string name="detail_abilities_tip">Abilities: </string>
+
+    <string name="search_selected_name">selected_name</string>
+
+    <string name="error_tips">An error has occurred. Try again later.</string>
+
+</resources>
